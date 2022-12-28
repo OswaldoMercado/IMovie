@@ -10,7 +10,8 @@ type LoginFormProps = {
     authorized: boolean
     submitAuthData: (data: LoginData) => Promise<string | undefined>
 }
-
+//crear login de el proyecto todavia no esta terminado 
+//trameos ciertas propiedades con Loginform props
 const LoginForm: FC<LoginFormProps> = (props) => {
 
     const {register, handleSubmit, formState: {errors}, setError} = useForm<LoginData>({mode: 'onBlur'});

@@ -6,7 +6,7 @@ import NavItem from '../MainNav/NavItem/NavItem';
 import ProfileMenu from '../Common/MenuVariants/ProfileMenu';
 import {NavLink} from 'react-router-dom';
 
-
+//crear la interface del usuario 
 interface HeaderProps {
     authorized: boolean
     username: string | undefined
@@ -14,7 +14,7 @@ interface HeaderProps {
     session_id: string
 }
 
-
+//HedarProps: Son las propiedades de la cabecera
 const Header: FC<HeaderProps> = ({authorized, username, logout, session_id}) => {
 
     return (
@@ -22,7 +22,7 @@ const Header: FC<HeaderProps> = ({authorized, username, logout, session_id}) => 
             <div className={styles.content}>
                 <div className={styles.logo}>
                     <NavLink to={'/'}>
-                        <img src={'../../logo.png'} alt="not found"/>
+                        <img src={'../../logo.png'} alt="IMOVIE"/>
                     </NavLink>
                 </div>
                 <MainNav/>

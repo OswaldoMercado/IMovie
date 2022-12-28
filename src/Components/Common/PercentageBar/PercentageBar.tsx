@@ -4,7 +4,7 @@ interface PercentageProps {
     rating: number
     size: number
 }
-
+// PercentageProps:A menudo se usa para definir un tamaño en relación con el objeto principal de un elemento.
 const PercentageBar: FC<PercentageProps> = ({rating, size}) => {
 
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -33,7 +33,7 @@ const PercentageBar: FC<PercentageProps> = ({rating, size}) => {
         top: `${size * 0.25}px`,
         fontFamily: 'Consolas',
     }
-
+    //utilizar efecto para realizar el rating y mostrar de colores 
     useEffect(() => {
 
         if (!canvasRef.current) return;

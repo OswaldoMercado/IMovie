@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 
 
-
+//vista desplegable que se llama para desplegar un menu
 const ProfileMenu:FC = () => {
     const data = [
         {text: 'Discusiones', url: '/u'},

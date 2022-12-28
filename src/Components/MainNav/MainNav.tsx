@@ -7,7 +7,7 @@ import PeopleMenu from "../Common/MenuVariants/PeopleMenu";
 import Moremenu from "../Common/MenuVariants/MoreMenu";
 
 
-
+//traer el menu con react usar el type React.FC, el cual es el nombre abreviado de React.FunctionComponent. Con esto el mensaje de Typescript que nos advierte de un children con tipo any desaparecerá
 const MainNav:FC = () => {
 
     return (

@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 type YoutubeProps = {
     url:string
 }
-
+//sirve para mostrar videos de youtube, mostrar la caratula con ciertas especificaciones
 const YoutubeEmbed:FC<YoutubeProps> = ({url}) => {
     return (
         <div className="video-responsive">

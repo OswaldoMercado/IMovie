@@ -14,7 +14,7 @@ interface LinkItemProps {
     onCLick?:(args:any)=>any
     variant:LinkItemStyles
 }
-
+//El LinkItemProps representa un elemento envuelto en una etiqueta de anclaje , lo <a>que resulta útil cuando se desea pasar a otra página.
 const LinkItem:FC<LinkItemProps> = ({text,url,addStyle,onCLick,variant,children}) => {
     // @ts-ignore
     const variantStyles = addStyle ? `${styles[variant]} ${addStyle}` : styles[variant];

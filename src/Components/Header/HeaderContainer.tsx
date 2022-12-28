@@ -5,7 +5,7 @@ import Header from './Header';
 import {LogOutThunk} from '../../redux/reducers/authReducer';
 
 
-
+// se utilizan las propiedades de redux
 
 const HeaderContainer:FC<ReduxProps> = (props) => {
     return (
@@ -21,7 +21,7 @@ const mapStateToProps = (state:RootState)=>({
     username:state.authorization.userInfo?.username,
     session_id:state.authorization.session_id,
 })
-
+//Como primer argumento pasado a connect, mapStateToPropsse utiliza para seleccionar la parte de los datos del almacén que necesita el componente conectado.
 const connector = connect(mapStateToProps,{LogOutThunk});
 type ReduxProps = ConnectedProps<typeof connector>;
 

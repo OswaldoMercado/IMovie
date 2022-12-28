@@ -13,9 +13,9 @@ type MenuData = {
 interface DropdownMenuProps {
     data: MenuData[]
 }
-
+//DropdownMenuProps son listas despegables para mostrar listas de enlaces y más con el complemento desplegable Bootstrap
 const DropdownMenu: FC<DropdownMenuProps> = ({data}) => {
-
+//crear la animacion de las listas de enlaces
     const animatedMenu = useSpring({
         to:{
             transform:'scale(1)'
