@@ -1,5 +1,6 @@
 Proyecto de guia de streaming con las tecnologias
 Node, TypeScript, mongo, Express, Consumir un api
+(PWA)
 
 npm install
 
