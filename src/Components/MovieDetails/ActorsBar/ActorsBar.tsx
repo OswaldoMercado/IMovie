@@ -37,7 +37,7 @@ const ActorsBar: FC<ActorsBarProps> = ({actors, baseUrl, title,id}) => {
                 {cards}
                 <div className={styles.get_more}>
                     <NavLink to={`/movie/${id}/cast`}>
-                        <p>Смотреть <br/> ещё</p>
+                        <p>Ver <br/> mas</p>
                         <Arrow width={20}/>
                     </NavLink>
                 </div>

@@ -33,7 +33,7 @@ const SortedMoviesPage: FC<SortedMoviesPageProps> = (props) => {
             <Cards {...props}/>
             <div className={styles.button}>
                 <Button
-                    width={'100%'} height={'40px'} text={'Загрузить ещё'}
+                    width={'100%'} height={'40px'} text={'mostrar mas'}
                     callback={() => {
                         props.fetchMore(props.mediaType)
                     }}
