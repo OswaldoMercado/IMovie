@@ -1,3 +1,4 @@
+//se trae todo desde la api se pretende hacer un pwa
 import axios, {CancelTokenSource} from 'axios';
 import {
     ActorsAndCrew,

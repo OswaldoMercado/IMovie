@@ -8,18 +8,19 @@ interface buttonProps {
     height?:string
     callback?:(...args:any) => any
 }
-
+//realizar acciones del boton
 const Button: FC<buttonProps> = ({text,width,callback,height}) => {
-
+//se ponen los dos esttados del boton
     const [isActive, setIsActive] = useState<boolean>(false);
-
+//hacer el cambio del boton al ser precionado
     const changeIsActive = (): void => {
         setIsActive(prev => !prev);
     }
-
+//acciones al ser precionado
     return (
         <div>
             <button
+            
                 onClick={callback && callback}
                 onMouseOver={changeIsActive}
                 onMouseLeave={changeIsActive}
